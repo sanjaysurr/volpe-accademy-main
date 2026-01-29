@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Frontend Development | Volpe Academy</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<nav class="nav">
+			<div class="nav-container">
+				 <div class="logo">
+                    <a href="index.html">
+                        <img src="images/volpe logo.png" alt="Volpe Academy" class="nav-logo" />
+                    </a>
+                </div>
+				<button class="hamburger-menu" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="nav-links">
+					<a href="index.html">Home</a>
+					<select 
+					name="program" 
+					class="fancy-select" 
+					onchange="if(this.value) window.location.href = this.value;"
+					aria-label="Choose training program"
+				  >
+					<option value="" disabled selected>Our Courses</option>
+					<option value="hrprograms.html">HR Programs</option>
+					
+					<option value="digital-marketing.html">Digital Marketing</option>
+				  </select>
+					<a href="index.html#contact" class="nav-cta">Get Started</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main style="padding-top: 90px;">
+		<section class="it-programs-section" id="frontend-development">
+			<div class="it-background-pattern"></div>
+			<div class="it-programs-container">
+				<div class="it-section-header">
+					<div class="it-badge">
+						<span>IT PROGRAMS</span>
+					</div>
+					<h2 class="it-main-title">
+						<span class="it-title-line">SKILLS THAT MOVE</span>
+						<span class="it-title-accent">YOUR CAREER FORWARD</span>
+					</h2>
+					<div class="it-title-divider"></div>
+				</div>
+                
+				<div class="it-course-wrapper">
+					<div class="it-course-card">
+						<div class="it-card-header">
+							<div class="it-icon-wrapper">
+								<div class="it-icon-bg"></div>
+								<img src="images/gi bg.png" alt="Frontend" class="it-icon-img">
+							</div>
+							<h4 class="it-course-title">Frontend Development</h4>
+							<p class="it-course-tagline">"Code with precision. Design with purpose. Deliver with confidence."</p>
+						</div>
+                        
+						<div class="it-course-content">
+							<div class="it-skills-section">
+								<h5 class="it-section-label">Skills You Learn</h5>
+								<div class="it-skills-grid">
+									<div class="it-skill-card">
+										<span class="it-skill-icon">⚡</span>
+										<span class="it-skill-text">HTML5 Fundamentals</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">🎨</span>
+										<span class="it-skill-text">CSS3 Styling & Layouts</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">⚙️</span>
+										<span class="it-skill-text">JavaScript Essentials</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">📱</span>
+										<span class="it-skill-text">Responsive UI/UX</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">⚛️</span>
+										<span class="it-skill-text">React.js Basics</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">🔀</span>
+										<span class="it-skill-text">Git & Version Control</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">🚀</span>
+										<span class="it-skill-text">Deployment & Hosting</span>
+									</div>
+									<div class="it-skill-card">
+										<span class="it-skill-icon">✨</span>
+										<span class="it-skill-text">Live Project Execution</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="it-modules-section">
+								<h5 class="it-section-label">Course Modules</h5>
+								<div class="it-modules-container">
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">01</span>
+											<h6 class="it-module-title">HTML5 — Structure With Clarity</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Page structure & semantic tags</li>
+										<li>Forms & validation</li>
+										<li>Media embedding</li>
+										<li>HTML best practices</li>
+										<li>Accessibility basics (A11y)</li>
+										<li>Clean coding standards</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">02</span>
+											<h6 class="it-module-title">CSS3 — Styling With Precision</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>CSS selectors & properties</li>
+										<li>Colors, spacing, typography</li>
+										<li>Flexbox layout system</li>
+										<li>Grid layout system</li>
+										<li>CSS transitions & animations</li>
+										<li>Responsive styling</li>
+										<li>Class architecture & naming conventions</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">03</span>
+											<h6 class="it-module-title">JavaScript — Interaction & Functionality</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Variables, functions, loops</li>
+										<li>Arrays & objects</li>
+										<li>Events & DOM manipulation</li>
+										<li>ES6+ modern JavaScript features</li>
+										<li>Form validation</li>
+										<li>Basic error handling</li>
+										<li>Mini interactive projects</li>
+										<li>Clean code & debugging basics</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">04</span>
+											<h6 class="it-module-title">Responsive UI/UX — Design That Adapts</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Mobile-first approach</li>
+										<li>Breakpoints & scaling</li>
+										<li>Adaptive layout patterns</li>
+										<li>User-friendly interface design</li>
+										<li>UI alignment, spacing, hierarchy</li>
+										<li>Designing for clarity & consistency</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">05</span>
+											<h6 class="it-module-title">React.js Basics — Modern Frontend Framework</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Components & JSX</li>
+										<li>Props & State</li>
+										<li>Component structure</li>
+										<li>Intro to Hooks</li>
+										<li>Event handling</li>
+										<li>Lists, keys & rendering</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">06</span>
+											<h6 class="it-module-title">Git & Version Control — Work Like a Real Developer</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Git installation & setup</li>
+										<li>Initializing repositories</li>
+										<li>Commits & history</li>
+										<li>Branching & merging</li>
+										<li>Handling conflicts</li>
+										<li>GitHub basics</li>
+										<li>Uploading & managing projects</li>
+										<li>Team collaboration basics</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">07</span>
+											<h6 class="it-module-title">API Integration — Connect Frontend to Real Data</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Understanding APIs</li>
+										<li>Fetch & Axios basics</li>
+										<li>Handling JSON data</li>
+										<li>Async/await usage</li>
+										<li>Rendering dynamic content</li>
+										<li>Error handling in API calls</li>
+										<li>Mini API-based applications</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card">
+										<div class="it-module-header">
+											<span class="it-module-number">08</span>
+											<h6 class="it-module-title">Deployment & Hosting — Launch Your Work Online</h6>
+										</div>
+										<ul class="it-module-list">
+										<li>Project file structure</li>
+										<li>Build & optimization</li>
+										<li>Deploying on Netlify / Vercel</li>
+										<li>Domain basics</li>
+										<li>Hosting & DNS overview</li>
+										<li>Updating & version releases</li>
+										<li>Making your project publicly accessible</li>
+									</ul>
+									</div>
+
+									<div class="it-module-card it-module-highlight">
+										<div class="it-module-header">
+											<span class="it-module-number">09</span>
+											<h6 class="it-module-title">Live Projects — Practical, Job-Focused Execution</h6>
+										</div>
+										<p class="it-module-examples">(Examples)</p>
+										<ul class="it-module-list">
+										<li>Responsive landing page</li>
+										<li>Multi-section company website</li>
+										<li>Interactive UI features with JavaScript</li>
+										<li>React mini application</li>
+										<li>Live hosted final project</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="it-course-footer">
+									<div class="it-course-details">
+										<div class="it-detail-item">
+											<span class="it-detail-label">Eligibility</span>
+											<span class="it-detail-value">Any Stream</span>
+										</div>
+										<div class="it-detail-item">
+											<span class="it-detail-label">Mode</span>
+											<span class="it-detail-value">Mon–Fri | Live Projects | 90 Days</span>
+										</div>
+									</div>
+									<div class="it-graduation-box">
+										<p class="it-graduation-statement">You graduate with confidence, clarity, and a portfolio that speaks for you.</p>
+									</div>
+								</div>
+							</div>
+							</div>
+						</section>
+	</main>
+
+	<script src="scripts.js"></script>
+</body>
+</html>
+

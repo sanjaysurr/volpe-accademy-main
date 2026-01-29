@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volpe Academy — Building Future-Ready Professionals the Industry Can't Ignore</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="block-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                 <div class="logo">
+                    <img src="images/volpe logo.png" alt="Volpe Academy" class="nav-logo" />
+                </div>
+                
+                <button class="hamburger-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="#about">About</a>
+                   <select 
+  name="program" 
+  class="fancy-select" 
+  onchange="if(this.value) window.location.href = this.value;"
+  aria-label="Choose training program"
+>
+  <option value="" disabled selected>Our Courses</option>
+  <option value="hrprograms.html">HR Programs</option>
+  <option value="frontend-development.html">Frontend Development</option>
+  <option value="digital-marketing.html">Digital Marketing</option>
+</select>
+
+<style>
+  
+</style>
+                    <a href="#contact" class="nav-cta">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background-overlay"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-text">Volpe Academy</span>
+                            <span class="badge-dot"></span>
+                        </div>
+                        
+                        <div class="hero-tagline">
+                            <span class="tagline-main">BUILDING FUTURE-READY PROFESSIONALS THE INDUSTRY CAN'T IGNORE</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">THE FUTURE OF</span>
+                            <span class="title-line">PROFESSIONAL LEARNING</span>
+                            <span class="title-line title-accent-line">STARTS <span class="title-accent">HERE</span></span>
+                        </h1>
+                        
+                        <p class="hero-subtitle">Where Professionals Are Built, Not Born.</p>
+                        
+                        <div class="hero-description">
+                            <p class="description-highlight">Welcome to Volpe Academy, the powerhouse of HR, IT, Digital Marketing, and AI-driven education.</p>
+                            <p>We operate with sharp precision, corporate discipline, and a performance-first training model designed to build the kind of professionals companies notice first.</p>
+                        </div>
+                        
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <span class="feature-text">Corporate-Grade Training</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <span class="feature-text">Real-World Projects</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <span class="feature-text">Career Acceleration</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-cta">
+                            <button class="cta-button primary">
+                                <span class="button-text">Start Your Journey</span>
+                                <span class="button-arrow">→</span>
+                            </button>
+                            <button class="cta-button secondary">
+                                <span class="button-text">Explore Programs</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-images">
+                        <div class="hero-image-main">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Professional Training" class="main-image">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="hero-image-secondary">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Team Collaboration" class="secondary-image">
+                        </div>
+                        <div class="hero-image-tertiary">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Success Achievement" class="tertiary-image">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-line"></div>
+                <span class="scroll-text">Scroll to explore</span>
+            </div>
+        </section>
+
+        <section class="courses-section" id="programs">
+            <div class="courses-background-pattern"></div>
+            <div class="courses-container">
+                <div class="courses-section-header">
+                    <div class="courses-badge">
+                        <span>PROGRAMS</span>
+                    </div>
+                    <h2 class="courses-main-title">
+                        <span class="courses-title-line">CHOOSE YOUR</span>
+                        <span class="courses-title-accent">TRACK</span>
+                    </h2>
+                    <div class="courses-title-divider"></div>
+                </div>
+                
+                <div class="program-category-grid" aria-label="Programs">
+                    <a class="program-category-tile program-category-tile--hr" href="hrprograms.html">
+                        <span class="program-category-kicker">Programs</span>
+                        <span class="program-category-title">HR Programs</span>
+                        <span class="program-category-subtitle">Explore all HR courses</span>
+                    </a>
+
+                    <a class="program-category-tile program-category-tile--fe" href="frontend-development.html">
+                        <span class="program-category-kicker">IT</span>
+                        <span class="program-category-title">Frontend Development</span>
+                        <span class="program-category-subtitle">Details, modules & projects</span>
+                    </a>
+
+                    <a class="program-category-tile program-category-tile--dm" href="digital-marketing.html">
+                        <span class="program-category-kicker">Digital</span>
+                        <span class="program-category-title">Digital Marketing</span>
+                        <span class="program-category-subtitle">Marketing mastery program</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-section" id="about">
+            <div class="why-background-pattern"></div>
+            <div class="why-container">
+                <div class="why-content">
+                    <div class="why-header">
+                        <div class="why-badge">
+                            <span>EXCELLENCE</span>
+                        </div>
+                        <h2 class="why-title">
+                            <span class="title-part-1">WHY Volpe ACADEMY</span>
+                            <span class="title-part-2">STANDS ABOVE THE REST</span>
+                        </h2>
+                        <div class="why-divider"></div>
+                        <p class="why-subtitle">Because today's world rewards excellence — not effort.</p>
+                        <p class="why-mission">Every program is built with one mission:<br>to create professionals who dominate in their careers.</p>
+                    </div>
+
+                    <div class="training-advantage">
+                        <div class="advantage-header">
+                            <h3 class="advantage-title">OUR TRAINING ADVANTAGE</h3>
+                            <p class="advantage-subtitle">Where corporate excellence meets professional growth</p>
+                        </div>
+                        <div class="advantage-grid">
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">📚</div>
+                                </div>
+                                <h4 class="advantage-card-title">Corporate-Designed Curriculum</h4>
+                                <p class="advantage-card-text">Industry-aligned programs crafted by experts</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">🎯</div>
+                                </div>
+                                <h4 class="advantage-card-title">30 Days + OGT</h4>
+                                <p class="advantage-card-text">On-Ground Training for real-world experience</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">💼</div>
+                                </div>
+                                <h4 class="advantage-card-title">Real-Time Projects</h4>
+                                <p class="advantage-card-text">Hands-on simulations & live project execution</p>
+                            </div>
+                           
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">📊</div>
+                                </div>
+                                <h4 class="advantage-card-title">Case-Study Sessions</h4>
+                                <p class="advantage-card-text">Decision-making through real business scenarios</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">🚀</div>
+                                </div>
+                                <h4 class="advantage-card-title">Career Enhancement</h4>
+                                <p class="advantage-card-text">Resume, interview & professional development support</p>
+                            </div>
+                            <div class="advantage-card">
+                                <div class="advantage-icon-wrapper">
+                                    <div class="advantage-icon">🏆</div>
+                                </div>
+                                <h4 class="advantage-card-title">Trusted Certifications</h4>
+                                <p class="advantage-card-text">Recognized by leading companies worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-footer">
+                        <div class="why-footer-content">
+                            <div class="why-statement-wrapper">
+                                <p class="why-statement">We don't follow standards — we set them.</p>
+                            </div>
+                            <div class="why-quote-wrapper">
+                                <div class="quote-mark">"</div>
+                                <p class="why-quote">Built for Ambition. Designed for Results.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-background-pattern"></div>
+            <div class="about-container">
+                <div class="about-header">
+                    <div class="about-badge">
+                        <span>WHO WE ARE</span>
+                    </div>
+                    <h2 class="section-title">
+                        <span class="title-main">ABOUT</span>
+                        <span class="title-accent">Volpe ACADEMY</span>
+                    </h2>
+                    <div class="about-divider"></div>
+                    <p class="about-intro">Building future-ready professionals through precision, execution, and excellence.</p>
+                </div>
+                
+                <div class="about-content">
+                    <!-- The Volpe Way -->
+                    <div class="about-block volpe-way">
+                        <div class="block-header">
+                           
+                            <h3 class="block-title">THE Volpe WAY</h3>
+                            <p class="block-tagline">Precision. Execution. Excellence.</p>
+                        </div>
+                        <div class="block-body-grid">
+                            <div class="block-body-text">
+                                <p class="block-description">Volpe Academy is built for those who refuse to settle for average.</p>
+                                <p class="block-description">Our system blends discipline, structure, and modern learning to shape confident, job-ready performers.</p>
+                                <div class="block-points">
+                                    <div class="point-card">
+                                        <div class="point-icon">🎯</div>
+                                        <p class="point-item">Every module is engineered for real-world performance.</p>
+                                    </div>
+                                    <div class="point-card">
+                                        <div class="point-icon">💪</div>
+                                        <p class="point-item">Every project sharpens capability.</p>
+                                    </div>
+                                    <div class="point-card">
+                                        <div class="point-icon">🚀</div>
+                                        <p class="point-item">Every session elevates confidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-body-image">
+                                <img src="images/girl bg.png" alt="Team Collaboration" />
+                            </div>
+                        
+
+                  
+
+                </div>
+            </div>
+        </section>
+
+        <section class="vision-mission-section">
+            <div class="vm-background-pattern"></div>
+            <div class="vm-container">
+                <div class="vm-section-header">
+                    <div class="vm-badge">
+                        <span>OUR FOUNDATION</span>
+                    </div>
+                    <h2 class="vm-main-title">
+                        <span class="vm-title-line">VISION &</span>
+                        <span class="vm-title-line vm-title-accent">MISSION</span>
+                    </h2>
+                    <div class="vm-title-divider"></div>
+                </div>
+
+                <div class="vm-content-wrapper">
+                    <div class="vm-card vision-card">
+                        <div class="vm-card-background vision-bg-gradient"></div>
+                        <div class="vm-card-content">
+                            <div class="vm-card-header">
+                                <div class="vm-icon-container vision-icon-container">
+                                    <div class="vm-icon-bg vision-icon-bg"></div>
+                                    <div class="vm-icon-large">👁️</div>
+                                </div>
+                                <h3 class="vm-card-title">OUR VISION</h3>
+                                <div class="vm-card-underline"></div>
+                            </div>
+                            <div class="vm-card-body">
+                                <div class="vision-content-wrapper">
+                                    <div class="vision-icon-decoration">🌟</div>
+                                    <p class="vm-card-text">To develop a powerful league of future-ready professionals equipped with strong skills and a strong mindset.</p>
+                                    <div class="vision-highlight-box">
+                                        <span class="vision-highlight-text">Building Tomorrow's Leaders Today</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vm-card mission-card">
+                        <div class="vm-card-background mission-bg-gradient"></div>
+                        <div class="vm-card-content">
+                            <div class="vm-card-header">
+                                <div class="vm-icon-container mission-icon-container">
+                                    <div class="vm-icon-bg mission-icon-bg"></div>
+                                    <div class="vm-icon-large">🎯</div>
+                                </div>
+                                <h3 class="vm-card-title">OUR MISSION</h3>
+                                <div class="vm-card-underline"></div>
+                            </div>
+                            <div class="vm-card-body">
+                                <p class="vm-card-intro">To deliver high-impact training that builds:</p>
+                                <div class="mission-items-grid">
+                                    <div class="mission-item-card">
+                                        <div class="mission-check-circle">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="mission-item-content">
+                                            <span class="mission-item-title">Job-ready confidence</span>
+                                            <span class="mission-item-subtitle">Real-world preparation</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-item-card">
+                                        <div class="mission-check-circle">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="mission-item-content">
+                                            <span class="mission-item-title">Corporate-grade capability</span>
+                                            <span class="mission-item-subtitle">Industry-standard skills</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-item-card">
+                                        <div class="mission-check-circle">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="mission-item-content">
+                                            <span class="mission-item-title">Professional discipline</span>
+                                            <span class="mission-item-subtitle">Structured excellence</span>
+                                        </div>
+                                    </div>
+                                    <div class="mission-item-card">
+                                        <div class="mission-check-circle">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <div class="mission-item-content">
+                                            <span class="mission-item-title">Leadership-driven thinking</span>
+                                            <span class="mission-item-subtitle">Strategic mindset</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+       
+      
+      
+        <section class="workshops-section">
+            <div class="workshops-background-pattern"></div>
+            <div class="workshops-container">
+                <div class="workshops-section-header">
+                    <div class="workshops-badge">
+                        <span>WORKSHOPS</span>
+                    </div>
+                    <h2 class="workshops-main-title">
+                        <span class="workshops-title-line">FAST-TRACK</span>
+                        <span class="workshops-title-accent">PROFESSIONAL GROWTH</span>
+                    </h2>
+                    <div class="workshops-title-divider"></div>
+                </div>
+                
+                <div class="workshops-grid">
+                    <div class="workshop-card">
+                        <div class="workshop-icon-wrapper">
+                            <span class="workshop-icon">⭐</span>
+                        </div>
+                        <h4 class="workshop-title">Certified HR Professional</h4>
+                        <div class="workshop-price-wrapper">
+                            <span class="workshop-price">₹15,000</span>
+                        </div>
+                        <p class="workshop-tagline">"Start your HR journey with confidence."</p>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-icon-wrapper">
+                            <span class="workshop-icon">⭐</span>
+                        </div>
+                        <h4 class="workshop-title">HR Business Partner</h4>
+                        <div class="workshop-price-wrapper">
+                            <span class="workshop-price">₹15,000</span>
+                        </div>
+                        <p class="workshop-tagline">"The link between people and business success."</p>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-icon-wrapper">
+                            <span class="workshop-icon">⭐</span>
+                        </div>
+                        <h4 class="workshop-title">Payroll Specialist</h4>
+                        <div class="workshop-price-wrapper">
+                            <span class="workshop-price">₹10,000</span>
+                        </div>
+                        <p class="workshop-tagline">"Precision-driven payroll & compliance mastery."</p>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-icon-wrapper">
+                            <span class="workshop-icon">⭐</span>
+                        </div>
+                        <h4 class="workshop-title">Head HR Certification</h4>
+                        <div class="workshop-price-wrapper">
+                            <span class="workshop-price">₹25,000</span>
+                        </div>
+                        <p class="workshop-tagline">"Lead culture. Influence performance."</p>
+                    </div>
+
+                    <div class="workshop-card">
+                        <div class="workshop-icon-wrapper">
+                            <span class="workshop-icon">⭐</span>
+                        </div>
+                        <h4 class="workshop-title">CHRO Certification</h4>
+                        <div class="workshop-price-wrapper">
+                            <span class="workshop-price">₹30,000</span>
+                        </div>
+                        <p class="workshop-tagline">"High-level HR leadership for tomorrow's leaders."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="contact-background-pattern"></div>
+            <div class="contact-container">
+                <div class="contact-section-header">
+                    <div class="contact-badge">
+                        <span>CONTACT US</span>
+                    </div>
+                    <h2 class="contact-main-title">
+                        <span class="contact-title-line">LET'S BUILD YOUR FUTURE</span>
+                        <span class="contact-title-accent">WITH CONFIDENCE</span>
+                    </h2>
+                    <div class="contact-title-divider"></div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">📍</span>
+                        </div>
+                        <div class="contact-content">
+                            <span class="contact-label">Address</span>
+                            <span class="contact-value">bangalore</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">📞</span>
+                        </div>
+                        <div class="contact-content">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value"><a href="tel:+919669919816">+91 96699 19816</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">📧</span>
+                        </div>
+                        <div class="contact-content">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value"><a href="mailto:Volpeacdemey@gmail.com">Volpeacdemey@gmail.com</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" aria-label="Send us a message">
+                    <h3 class="contact-form-title">Send a Message</h3>
+                    <p class="contact-form-subtitle">We’ll get back to you as soon as possible.</p>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="contact-form-grid">
+                            <div class="form-field">
+                                <label for="cf_name">Name</label>
+                                <input id="cf_name" name="from_name" type="text" placeholder="Your name" required />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cf_email">Email</label>
+                                <input id="cf_email" name="from_email" type="email" placeholder="you@example.com" required />
+                            </div>
+
+                            <div class="form-field">
+                                <label for="cf_phone">Phone (optional)</label>
+                                <input id="cf_phone" name="from_phone" type="tel" placeholder="+91…" />
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <label for="cf_message">Message</label>
+                            <textarea id="cf_message" name="message" rows="5" placeholder="Tell us what you’re looking for…" required></textarea>
+                        </div>
+
+                        <div class="contact-form-actions">
+                            <button type="submit" class="contact-submit-btn">Send</button>
+                            <span id="contact-form-status" class="contact-form-status" role="status" aria-live="polite"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-background-pattern"></div>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section footer-brand">
+                    <div class="footer-logo">Volpe ACADEMY</div>
+                    <p class="footer-tagline">Building Future-Ready Professionals the Industry Can't Ignore</p>
+                    <p class="footer-description">Where Professionals Are Built, Not Born.</p>
+                </div>
+                
+                <div class="footer-section footer-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-programs">
+                    <h4 class="footer-heading">Programs</h4>
+                    <ul class="footer-link-list">
+                        <li><a href="#programs">HR Programs</a></li>
+                        <li><a href="#programs">IT Programs</a></li>
+                        <li><a href="#programs">Digital Marketing</a></li>
+                        <li><a href="#programs">Workshops</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-icon">📍</span>
+                            <span class="footer-contact-text">264, 2nd Floor, 36th B Cross Rd, 7th Block, Jayanagar, Bengaluru, Karnataka 560070</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-icon">📞</span>
+                            <a class="footer-contact-link" href="tel:+919663313816">+91 9663313816</a>
+                        </div>
+                        <div class="footer-contact-item">
+                            <span class="footer-contact-icon">📧</span>
+                            <a class="footer-contact-link" href="mailto:goutham@mediabullsi.com">goutham@mediabullsi.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2024 Volpe Academy. All rights reserved.</p>
+                <p class="footer-motto">Built for Ambition. Designed for Results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
