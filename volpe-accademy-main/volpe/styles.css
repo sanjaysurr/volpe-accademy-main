@@ -3522,6 +3522,23 @@ body {
     display: inline-block;
 }
 
+.workshop-age {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+    color: #1d4ed8;
+    border: 1px solid rgba(59, 130, 246, 0.6);
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.25);
+}
+
 .workshop-tagline {
     font-size: 0.85rem;
     font-style: italic;
