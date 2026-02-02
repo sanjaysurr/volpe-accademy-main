@@ -942,7 +942,7 @@ body {
     position: relative;
 }
 
-.title-part-2::after {
+/* .title-part-2::after {
     content: '';
     position: absolute;
     bottom: 0.1em;
@@ -952,7 +952,7 @@ body {
     background: linear-gradient(90deg, var(--accent-color), transparent);
     opacity: 0.4;
     z-index: -1;
-}
+} */
 
 .why-divider {
     width: 80px;
