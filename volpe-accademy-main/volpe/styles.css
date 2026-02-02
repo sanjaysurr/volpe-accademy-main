@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -3119,20 +3122,19 @@ body {
 .dm-course-wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .dm-course-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
-    padding: 4rem 3.5rem;
-    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
+    padding: 3rem 2rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     box-shadow: 
         0 25px 70px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(37, 99, 235, 0.05);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.8);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-    position: relative;
 }
 
 .dm-course-card::before {
@@ -4054,8 +4056,80 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* General mobile styles */
     .nav-container {
         padding: 1rem 1.5rem;
+    }
+    
+    /* Digital Marketing specific mobile styles */
+    .dm-course-wrapper {
+        padding: 0;
+        margin: 0 -1rem;
+        width: calc(100% + 2rem);
+    }
+    
+    .dm-course-card {
+        border-radius: 0;
+        padding: 2rem 1.5rem;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .dm-detailed-section {
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    
+    .module-item {
+        margin-bottom: 2rem;
+        padding: 1.25rem;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .module-number {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        color: var(--primary-color);
+        display: block;
+    }
+    
+    .module-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1.25rem;
+        color: var(--text-dark);
+    }
+    
+    .module-subtitle {
+        font-weight: 600;
+        margin: 1.5rem 0 0.75rem;
+        font-size: 1rem;
+        color: var(--primary-color);
+    }
+    
+    .module-list {
+        padding-left: 1.5rem;
+        margin: 0.75rem 0 1.5rem;
+    }
+    
+    .module-list li {
+        margin-bottom: 0.6rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--text-dark);
+    }
+    
+    .module-outcome {
+        font-style: italic;
+        font-size: 0.95rem;
+        color: var(--text-light);
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px dashed var(--border-color);
+        font-weight: 500;
     }
     
     .nav-links {
@@ -5281,7 +5355,7 @@ body {
     }
     
     .edge-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .edge-description {
@@ -5764,41 +5838,77 @@ body {
 }
 
 /* Enhanced Mobile Navigation - Hamburger Menu */
+/* Mobile menu styles */
 @media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    body.menu-open {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
     .nav-links {
         position: fixed;
         top: 70px;
         left: -100%;
         width: 100%;
-        height: calc(100vh - 70px);
+        max-height: calc(100vh - 70px);
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
         flex-direction: column;
         align-items: flex-start;
-        padding: 2rem 1.5rem;
+        padding: 1.5rem;
         gap: 0;
-        transition: left 0.3s ease;
+        transition: left 0.3s ease, opacity 0.3s ease;
         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
         z-index: 999;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     .nav-links.active {
         left: 0;
+        opacity: 1;
+        visibility: visible;
     }
     
     .nav-links a {
+        display: block;
         width: 100%;
         padding: 1rem 1.5rem;
         font-size: 1rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         border-radius: 0;
+        text-align: left;
+        transition: all 0.2s ease;
+    }
+    
+    .nav-links a:hover {
+        background: rgba(37, 99, 235, 0.05);
+        transform: none;
     }
     
     .nav-links a.nav-cta {
         margin: 1rem 0 0;
         border-radius: 12px;
         text-align: center;
+        background: linear-gradient(135deg, var(--primary-color) 0%, #3b82f6);
+        color: white !important;
+        border: none;
+        padding: 0.8rem 1.5rem;
+    }
+    
+    .nav-links a.nav-cta:hover {
+        background: linear-gradient(135deg, #1d4ed8 0%, var(--primary-color));
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
     }
     
     /* Hamburger Menu Button - Show on Mobile */
@@ -5815,6 +5925,7 @@ body {
         z-index: 1001;
         order: 2;
         position: relative;
+        -webkit-tap-highlight-color: transparent;
     }
     
     .hamburger-menu span {

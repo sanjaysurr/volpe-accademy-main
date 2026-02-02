@@ -1,12 +1,77 @@
+// Mobile menu toggle functionality
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+const body = document.body;
+
+// Toggle mobile menu
+function toggleMenu() {
+    const isOpen = navLinks.classList.toggle('active');
+    hamburgerMenu.classList.toggle('active', isOpen);
+    body.classList.toggle('menu-open', isOpen);
+    
+    // Toggle aria-expanded for accessibility
+    const expanded = hamburgerMenu.getAttribute('aria-expanded') === 'true' || false;
+    hamburgerMenu.setAttribute('aria-expanded', !expanded);
+}
+
+// Close menu when clicking outside
+function closeMenuOnOutsideClick(e) {
+    if (navLinks.classList.contains('active') && 
+        !navLinks.contains(e.target) && 
+        !hamburgerMenu.contains(e.target)) {
+        toggleMenu();
+    }
+}
+
+// Close menu when clicking on a nav link
+function closeMenuOnNavClick() {
+    if (window.innerWidth <= 768) {
+        toggleMenu();
+    }
+}
+
+// Initialize mobile menu
+function initMobileMenu() {
+    if (hamburgerMenu && navLinks) {
+        // Set initial ARIA attributes
+        hamburgerMenu.setAttribute('aria-label', 'Toggle menu');
+        hamburgerMenu.setAttribute('aria-expanded', 'false');
+        hamburgerMenu.setAttribute('aria-controls', 'nav-links');
+        navLinks.setAttribute('id', 'nav-links');
+        
+        // Add event listeners
+        hamburgerMenu.addEventListener('click', toggleMenu);
+        document.addEventListener('click', closeMenuOnOutsideClick);
+        
+        // Close menu when clicking on nav links (for mobile)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', closeMenuOnNavClick);
+        });
+    }
+}
+
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const target = document.querySelector(targetId);
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            // Close menu if open on mobile
+            if (window.innerWidth <= 768 && navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+            
+            // Smooth scroll to target
+            const headerOffset = 90; // Height of your header
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
             });
         }
     });
